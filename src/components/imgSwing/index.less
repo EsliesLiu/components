@@ -1,0 +1,37 @@
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-box {
+  width: 100px;
+  height: 100px;
+  margin: 10px 24px;
+  .ant-carousel {
+    .slick-dots-bottom {
+      display: none !important;
+    }
+  }
+  .img-box {
+    position: relative;
+    .show {
+      display: none;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    &:hover {
+      .show {
+        display: flex;
+      }
+    }
+    .img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
